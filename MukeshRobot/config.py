@@ -4,7 +4,7 @@ import os
 
 
 def get_user_list(config, key):
-    with open("{}/MukeshRobot/{}".format(os.getcwd(), config), "r") as json_file:
+    with open("{}/SanaRobot/{}".format(os.getcwd(), config), "r") as json_file:
         return json.load(json_file)[key]
 
 
@@ -17,14 +17,14 @@ class Config(object):
     API_ID = "" # integer value, dont use ""
     API_HASH = ""
     TOKEN = ""  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = "2145093972" # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    OWNER_USERNAME = "Mr_sukkun"
+    OWNER_ID = "5288547197" # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    OWNER_USERNAME = "YOUR_GODFATHER_XD"
     SUPPORT_CHAT = "the_support_chat"  # Your own group for support, do not add the @
     JOIN_LOGGER = (
-        -1001770762410
+        -1001940575506
     )  # Prints any new group the bot is added to, prints just the name and ID.
     EVENT_LOGS = (
-        -1001770762410
+        -1001940575506
     )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
     MONGO_DB_URI= ""
     # RECOMMENDED
